@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ShoppingList, ShopItemPriceHistory
+
+admin.site.register(ShopItemPriceHistory)
+admin.site.register(ShoppingList)

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pure_pagination',
     'django_filters',
+    'bootstrap4',
 ]
 
 PAGINATION_SETTINGS = {

@@ -12,6 +12,7 @@ pylint-django = "*"
 cookiecutter = "*"
 django-pure-pagination = "*"
 django-filter = "*"
+"django-bootstrap4" = "*"
 
 [dev-packages]
 

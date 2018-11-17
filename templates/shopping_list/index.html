@@ -1,3 +1,9 @@
+{% extends "_base.html" %}
+{% load bootstrap4 %}
+
+{% block title %}買い物リスト{% endblock %}
+
+{% block content %}
 {% if shopping_list %}
     <ul>
     {% for purcase in shopping_list %}
@@ -7,3 +13,4 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+{% endblock %}

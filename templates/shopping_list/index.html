@@ -4,6 +4,8 @@
 {% block title %}買い物リスト{% endblock %}
 
 {% block content %}
+
+<div class="row justify-content-left">
 {% if shopping_list %}
     <ul>
     {% for purcase in shopping_list %}
@@ -13,4 +15,5 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+</div>
 {% endblock %}

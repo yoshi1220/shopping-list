@@ -50,6 +50,10 @@ PAGINATION_SETTINGS = {
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,
 }
 
+BOOTSTRAP4 = {
+    'set_placeholder': False,
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

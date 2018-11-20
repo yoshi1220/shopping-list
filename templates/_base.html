@@ -17,6 +17,10 @@
 </head>
 <body>
 <div class="ui container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="{% url 'shopping_list:index' %}">買い物リスト</a>
+    </nav>
+    <br>
     {% block content %}{% endblock %}
 </div>
 

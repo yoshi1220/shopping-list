@@ -1,19 +1,31 @@
 {% extends "_base.html" %}
 {% load bootstrap4 %}
 
-{% block title %}買い物リスト{% endblock %}
+{% block page_title %}買い物リスト{% endblock %}
 
 {% block content %}
-
 <div class="row justify-content-left">
-{% if shopping_list %}
-    <ul>
-    {% for purcase in shopping_list %}
-        <li>{{ purcase.item }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+  {% if shopping_list %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>お店</th>
+          <th>価格</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for purcase in shopping_list %}
+          <tr>
+            <td>{{ purcase.item }}</td>
+            <td>{{ purcase.shop }}</td>
+            <td>{{ purcase.price }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>買う物はありません。</p>
+  {% endif %}
 </div>
 {% endblock %}

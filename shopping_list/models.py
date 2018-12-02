@@ -8,8 +8,7 @@ class ShopItemPriceHistory(models.Model):
     price = models.PositiveIntegerField(verbose_name='価格', default=0)
 
     def __str__(self):
-        return self.shop + "の" + self.item + "の価格：" + str(self.price) + "円"
-
+        return f"{self.shop}の{self.item}の価格：{str(self.price)}円"
 
 class ShoppingList(models.Model):
     """買い物リスト"""
@@ -19,4 +18,4 @@ class ShoppingList(models.Model):
     price = models.PositiveIntegerField(verbose_name='価格', default=0)
 
     def __str__(self):
-        return self.shop + "の" + self.item
+        return f"{self.shop}の{self.item}"

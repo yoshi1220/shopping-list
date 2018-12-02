@@ -12,14 +12,16 @@
           <th>商品</th>
           <th>お店</th>
           <th>価格</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        {% for purcase in shopping_list %}
+        {% for purchase in shopping_list %}
           <tr>
-            <td>{{ purcase.item }}</td>
-            <td>{{ purcase.shop }}</td>
-            <td>{{ purcase.price }}</td>
+            <td>{{ purchase.item }}</td>
+            <td>{{ purchase.shop }}</td>
+            <td>{{ purchase.price }}</td>
+            <td><a class="btn btn-secondary " href="#">削除</a></td>
           </tr>
         {% endfor %}
       </tbody>
